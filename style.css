@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: "Barlow", sans-serif;
+}
+p{
+    line-height: 1.5rem;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Fraunces", serif;
+}
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:grey;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+.sidebar-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    display: block;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 1rem;
+}
+.sidebar a:hover{
+    color: hsl(5, 85%, 63%);
+}
+.sidebar .closebtn{
+    position: absolute;
+    right: 0px;
+    width: 10%;
+    margin: 10px;
+    cursor: pointer;
+}
+header{
+    background-image: url('image-header.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 1.25rem;
+    text-align: center;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.5em;
+}
+header h1{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+#arrow{
+    margin-bottom: 9rem;
+}
+.aaa{
+    display: flex;
+    gap: 2rem;
+}
+.aaa a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.aaa a:hover{
+  background-color:lightgray;
+  border-radius: 30px;
+}
+.openbtn{
+    display: none;
+}
+.second-section{
+    display: flex;
+}
+.second-section div{
+    width: 50%;
+}
+.second-section img{
+    width:100%;
+    height: 100%;
+}
+.second-section-text{
+    margin: 3rem 0;
+display: flex;
+flex-direction: column;
+    padding: 3rem;
+}
+.second-section-text h3{
+    width: 350px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    
+}
+.second-section-text p{
+    width: 300px;
+    margin-bottom: 2rem;
+}
+.second-section a{
+    text-transform: uppercase;
+}
+.third-section{
+    display: flex;
+}
+.third-section div{
+    width: 50%;
+}
+.third-section div article{
+    width: 300px;
+    margin: auto;
+    margin-top: 50%;
+    text-align: center;
+}
+.third-section div article h4{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    width: 100%;
+}
+.sub-third1{
+ background-image: url('image-graphic-design.jpg');
+ background-size: cover;
+ color: hsl(167, 40%, 24%);
+ padding: 2rem;
+ text-align: bottom;
+}
+.sub-third2{
+    background-image: url('image-photography.jpg');
+    background-size: cover;
+    color: hsl(198, 62%, 26%);
+    padding: 2rem;
+}
+.fourth-section{
+    background: white;
+    padding: 1.35rem;
+    text-align: center;
+}
+.fourth-section h3{
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    color: hsl(210, 4%, 67%);
+}
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+.avatar{
+    width: 15%;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+}
+.grid-section p{
+    width: 200px;
+    margin: auto;
+}
+.emily1{
+    margin-top: 1.5rem;
+}
+.emily{
+    margin-top: 1rem;
+}
+.grid-section h6{
+    font-weight: 1000;
+}
+.fifth-section{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fifth-section img{
+    width: 100%;
+}
+footer{
+    background-color: hsl(168, 34%, 41%);
+    padding: 2rem;
+    text-align: center;
+}
+#footer-logo{
+    margin: 2rem 0;
+}
+.our-details{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+.our-details a{
+    color: hsl(198, 62%, 26%);
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.our-details a:hover{
+    color: white;
+}
+.our-details-icons{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.our-details-icons a:hover{
+    color: white;
+}
+
+
+@media(max-width:768px){
+    header{
+        background-image: url('image-header-mobile.jpg');
+    }
+    .openbtn{
+        display: block;
+    }
+    .aaa{
+        display: none;
+    }
+    .second-section{
+        flex-direction: column;
+    }
+    #second-section{
+        flex-direction: column-reverse;
+    }
+    .second-section div{
+        width: 100%;
+    }
+    .third-section{
+        flex-direction: column;
+    }
+    .third-section div{
+        width: 100%;
+    }
+    .grid-section{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .fifth-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media(min-width:900px){
+    .grid-section p{
+        width: 280px;
+    }
+}
